@@ -2,7 +2,7 @@ package com.santana.dev.emprestimo.controller;
 
 import com.santana.dev.emprestimo.model.Customer;
 import com.santana.dev.emprestimo.model.CustomerLoan;
-import com.santana.dev.emprestimo.service.CustumerService;
+import com.santana.dev.emprestimo.service.CustomerService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class CustumerController {
 
-    private final CustumerService service;
+    private final CustomerService service;
 
-    public CustumerController(CustumerService service) {
+    public CustumerController(CustomerService service) {
         this.service = service;
     }
 
